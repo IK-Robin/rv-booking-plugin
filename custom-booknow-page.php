@@ -26,14 +26,14 @@ function cbnp_create_book_now_page() {
        
     }
 }
-
+//  just add acomment 
 // Register the shortcode
 add_shortcode('cbnp_book_now_posts', 'cbnp_display_custom_posts');
 
 function cbnp_display_custom_posts() {
     ob_start();
 
-    // Query custom posts (default: 'post')
+    // Query custom posts (default: 'post') 
     $query = new WP_Query([
         'post_type'      => 'post',
         'posts_per_page' => -1
